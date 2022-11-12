@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Author full name: Chuchu Wu</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!--   chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+
+  <!-- tabulator -->
+  <link href="https://unpkg.com/tabulator-tables@4.7.0/dist/css/bootstrap/tabulator_bootstrap4.css" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.4.2/dist/js/tabulator.min.js"></script>
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+
+  <!--   bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="title">
+    <p class="mainTitle"><span style="color:#7ad93a">Blitz Day</span> 2020 Dev Case</p>
+  </div>
+
+  <br />
+
+  <div class="row">
+    <div div class="col-md-12">
+      <div id="chart-wrapper">
+        <div class="chart">
+          <p class="title">Chart: Population By Country</p>
+          <div class="loading">
+            Loading...
+          </div>
+          <div id="chartDiv">
+            <canvas id="chart1"></canvas>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="row" id="row2">
+    <div div class="col-md-8">
+      <div class="table">
+        <p class="title">Table 1: Country Basic Info</p>
+        <div id="table1"></div>
+      </div>
+    </div>
+
+    <div div class="col-md-4">
+      <div class="table" id="right-table">
+        <p class="title">Table 2: Population Density</p>
+        <div id="table2"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
